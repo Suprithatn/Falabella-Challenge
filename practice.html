@@ -1,0 +1,33 @@
+
+<div id="div1">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+</div>
+
+
+<select id="dropdown">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+</select>
+<p id="demo"></p>
+<script>
+	var p = document.createElement("p");
+	
+	var text = document.createTextNode("Hi , How are you?");
+	
+	p.appendChild(text);
+	
+	document.getElementById("div1").insertBefore(p, document.getElementById("p1"));
+	
+	
+	document.getElementById("dropdown").remove();
+	
+	var date1 = new Date("2020/01/01");
+	var date2 = new Date("2020/01/31");
+	
+	var diff_in_time = date2.getTime() - date1.getTime();
+	
+	document.write( diff_in_time/ (1000 * 3600 * 24 ) + " days");
+</script>
+
